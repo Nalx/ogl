@@ -15,33 +15,32 @@ tags: []
 language: es
 ---
 
-<span style="color: #ff0000;">[Tutorial 1](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/) explains how to build the source code. Please read it !</span>
+<span style="color: #ff0000;">[Tutorial 1](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/) explica como hacer un "build" el código fuente. Por favor leedlo!</span>
 
-You can download the ZIP archive containing the whole set of tutorials here (See the [FAQ](http://www.opengl-tutorial.org/miscellaneous/faq/) for which version to choose):
+Podéis descargar el archivo ZIP que contiene todo el set de tutoriales aquí (Ver los [FAQ](http://www.opengl-tutorial.org/miscellaneous/faq/) para saber que versión escoger.
 
-* [OpenGL-tutorial_v0015_33](https://github.com/opengl-tutorials/ogl/archive/OpenGL-tutorial_0015_33.zip) The normal version
-* [OpenGL-tutorial_v0015_21](https://github.com/opengl-tutorials/ogl/archive/OpenGL-tutorial_0015_21.zip) The OpenGL 2.1 port
+* [OpenGL-tutorial_v0015_33](https://github.com/opengl-tutorials/ogl/archive/OpenGL-tutorial_0015_33.zip) La versión normal
+* [OpenGL-tutorial_v0015_21](https://github.com/opengl-tutorials/ogl/archive/OpenGL-tutorial_0015_21.zip) El port a OpenGL 2.1 
 
-Alternatively, you have access to the latest version of the code on the Git repository :
+De manera alternativa, tenéis acceso a la última versión del código en el repositorio Git:
 
-* [Checkout the source on GitHub](https://github.com/opengl-tutorials/ogl) (The nodes corresponding to the above zips have tags OpenGL-tutorial_0015_33 and OpenGL-tutorial_0015_21 respectively)
+* [Compruebe el código fuente en GitHub](https://github.com/opengl-tutorials/ogl)(Los nodos correspondientes a los zips anteriores tienen etiquetas como  OpenGL-tutorial_0015_33 i OpenGL-tutorial_0015_21 respectivamente)
 
-All the source code on this site (except third-party libraries) is released under the WTFPL Public Licence :
+Todo el código fuente de este sitio web (excepto librerías "third-party") se publica bajo la licencia pública WTFPL:
 ```
-
-           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                   Version 2, December 2004
+           HACED LO QUE QUERAIS CON LA LICENCIA PUBLICA
+                   Version 2, Diciembre 2004
 
 Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
 
-Everyone is permitted to copy and distribute verbatim or modified
-copies of this license document, and changing it is allowed as long
-as the name is changed.
+Se permite a cualquier persona copiar y distribuir literalmente o copias modificadas
+de este documento de licencia, y modificar el contenido està permitido en tanto que se modifique
+el nombre de autor.
 
-           DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+           HACED LO QUE QUERAIS CON LA LICENCIA PUBLICA
+           TERMINOS Y CONDICIONES PARA COPIAR, DISTRIBUIR Y MODIFICAR
 
- 0. You just DO WHAT THE FUCK YOU WANT TO.
+ 0. HACED LO QUE QUERAIS.
 ```
-
-All the tutorial material is available under Creative-Common license: CC-BY-NC-ND available [here](http://creativecommons.org/licenses/by-nc-nd/3.0/fr/deed.en)
+Todo el material del tutorial esta disponible bajo licencia Creative-Common: CC-BY-NC-ND disponible [aqui]
+(http://creativecommons.org/licenses/by-nc-nd/3.0/fr/deed.en)
