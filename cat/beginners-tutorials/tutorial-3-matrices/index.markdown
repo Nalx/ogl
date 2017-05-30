@@ -2,41 +2,40 @@
 layout: page
 status: publish
 published: true
-title: 'Tutorial 3 : Matrices'
+title: 'Tutorial 3 : Matrius'
 date: '2011-04-09 20:59:15 +0200'
 date_gmt: '2011-04-09 20:59:15 +0200'
 categories: [tuto]
 order: 30
 tags: []
-language: es
+language: cat
 ---
 {:TOC}
 
-> _Los motores no mueven la nave. La nave permanece en su lugar y el universo se mueve alrededor de ella._
+> _Els motors no mouen la nau. La nau roman al seu lloc i l'univers es mou al seu voltant._
 > 
 > Futurama
 
-**Este es el tutorial más importante de los tutoriales de principiante. Leelo al menos 8 veces.**
+**Aquest és el tutorial més important dels tutorials per a principiants. Llegiu-lo 8 vegades com a minim**
+# Coordenades homogènies
 
-# Coordenadas homogéneas
+Fins ara, considerem les coordenades 3D com a tripla (x,y,z). Introduirèm ara la 'w'. Ara tindrèm vectors com (x,y,z,w).
 
-Hasta ahora, consideramos las coordenadas 3D como triplas (x,y,z). Vamos a introducir a 'w'. Ahora tendremos vectores (x,y,z,w).
+Més endabant será mes silsill, per ara només recorda que:
+ - Si w==1 el vector és una posició a l'espai.
+ - Si w==0 el vector és una direcció.
 
-Será más sencillo después, por ahora solo recuerda que:
+(Recorda-ho per sempre més)
 
-- Si w==1 el vector es una posición en el espacio.
-- Si w==0 el vector e suna dirección.
-
-(Recuerdelo para siempre)
-
-¿Qué diferencia hace? Bueno, para una rotación no hace la diferencia. Cuando usted rota un punto o una dirección, obtiene el mismo resultado. Sin embargo para una traslación (mover un punto en una dirección), las cosas son diferentes. Que podria significar "traslación de una dirección"? Nada.
-
-Las coordenadas homogéneas usan una única fórmula matemática para lidiar con estos dos casos cases.
-
-# Transformación de matrices
+Quina diferència hi ha? Bé, per a les rotacións no hi veurèm cap diferència. Quan rotèm un punt o una direcció, obtindrèm el mateix resultat. No obstant això per una traslació (moure un punt o una direcció), les coses son diferents. Què vol dir "traslació de una direcció?" No te cap sentit.
 
 
-## Introduction a las matrices
+Les coordenadas homogènies usen una única formula matemàtica para lidiar amb aquest dos casos.
+
+# Transformació de matrius
+
+
+## Introducció a les matrius
 
 En términos simples, una matriz es un arreglo de números con un número predefinido de filas y columnas. Por ejemplo, una matriz de 2x3 se ve así
 
