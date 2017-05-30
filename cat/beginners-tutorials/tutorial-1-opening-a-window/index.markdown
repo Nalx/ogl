@@ -18,16 +18,16 @@ Benvingut al primer tutorial !
 Abans de saltar a OpenGL, és important primer apendre a compilar el codi que ve amb cada tutorial, com executar-lo i el més important, com modificar el codi tu mateix.
 # Prerrequisits
 
-
 No hi ha prerrequisits per seguir aquest tutorial. Si tens experiencia amb cualsevol llenguatge de programació (C, Java, Lisp, Javascript,altres) et servira per entendre el codi, pero no és necessari. Seria com apendre dues coses al mateix temps.
 
 Tots els tutorials están escrits en c++ "fácil". Hem fet un gran esforç per fer el codi el més senzill posible. No hi ha templates, no hi ha classes i no hi ha punters. D'aquesta manera podreu entendre-ho tot malgrat només sapigueu programar en Java.
 
 # Oblida todo lo anterior
 
-No tienes que saberlas todas, pero aquí debes olvidar todo lo que sabes de OpenGL. Si sabes algo acerca de una cosa que se parece a glBegin(), olvidalo. Aquí vas a aprender el OpenGl moderno (OpenGL 3 y 4), y la mayoría de tutoriales enseñan el OpenGl "viejo" (OpenGL 1 and 2). así que olvida todo lo que sabes antes de que tu cerebro se derrita con la mezcla.
+No has de saber-ho tot, però aquí has d'oblidar tot el que saps de OpenGL. Si saps quelcom que s'assembli a glBegin(), oblida-ho. Aquí aprendràs el OpenGL modern (OpenGL 3 i 4), i la majoria de tutorials ensenyen el OpenGL "antic" (OpenGL 1 i 2) així que oblida tot el que saps abans que el teu cervell es desfaci amb la barreja.
 
-# Compilando los tutoriales
+
+# Compilant els tutoriales
 
 Todos los tutoriales pueden ser compilados en Windows, Linux y Mac. Para todas las plataformas el proceso es prácticamente el mismo :
 
