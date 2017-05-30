@@ -24,7 +24,7 @@ Podéis descargar el archivo ZIP que contiene todo el set de tutoriales aquí (V
 
 De manera alternativa, tenéis acceso a la última versión del código en el repositorio Git:
 
-* [Compruebe el código fuente en GitHub](https://github.com/opengl-tutorials/ogl)(Los nodos correspondientes a los zips anteriores tienen etiquetas como  OpenGL-tutorial_0015_33 i OpenGL-tutorial_0015_21 respectivamente)
+* [Compruebe el código fuente en GitHub](https://github.com/opengl-tutorials/ogl)(Los nodos correspondientes a los zips anteriores tienen etiquetas como  OpenGL-tutorial_0015_33 y OpenGL-tutorial_0015_21 respectivamente)
 
 Todo el código fuente de este sitio web (excepto librerías "third-party") se publica bajo la licencia pública WTFPL:
 ```
