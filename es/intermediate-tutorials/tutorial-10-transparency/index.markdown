@@ -2,7 +2,7 @@
 layout: page
 status: publish
 published: true
-title: 'Tutorial 10 : Transparency'
+title: 'Tutorial 10 : Transparencia'
 date: '2011-05-13 23:00:42 +0200'
 date_gmt: '2011-05-13 23:00:42 +0200'
 categories: [tuto]
@@ -11,24 +11,23 @@ tags: []
 language: es
 ---
 
-# The alpha channel
-
+# El canal alpha
+El concepto de canal alpha es bastante simple. En vez de escribir RGB escribiremos RGBA:
 The concept of the alpha channel is pretty simple. Instead of a writing an RGB result, you write an RGBA :
 
 ``` glsl
-// Ouput data : it's now a vec4
+// Ouput data : ahora es un vec4
 out vec4 color;
 ```
 {: .highlightglslfs }
-
-the first 3 components are still accessed with the .xyz swizzle operator, while the last one is accessed with .a :
+los primeros 3 componentes se siguen accediendo con el operador swizzle .xyz, mientras los ultimos se acceden con un .a:
 
 ``` glsl
 color.a = 0.3;
 ```
 {: .highlightglslfs }
 
-Unintuitively, alpha = opaqueness, so alpha = 1 means fully opaque while alpha = 0 means fully transparent.
+A pesar de ser poco intuitivo, alpha = opacidad, entonces alpha 1 significa totalmente opaco mientras que alpha = 0 significa totalmente transparente.
 
 Here, we simply hardcode the alpha channel at 0.3, but you probably want to use a uniform, or read it from a RGBA texture ( TGA supports the alpha channel, and GLFW supports TGA )
 
@@ -37,11 +36,11 @@ Here's the result. Make sure to turn backface culling off (glDisable(GL_CULL_FAC
 ![]({{site.baseurl}}/assets/images/tuto-10-transparency/transparencyok.png)
 
 
-# Order matters !
+# El orden importa !
 
 The previous screenshot looks okay-ish, but that's just because we're lucky.
 
-## The problem
+## El problema
 
 Here, I drew two squares with 50% alpha, one green and one red. You can see that order is important, the final colour gives an important clue to the eyes for proper depth perception.
 
@@ -55,7 +54,7 @@ This phenomena also happens in our scene. Let's change the viewpoint a bit :
 
 It turns out that this is a very hard problem. You never see lots of transparency in games, do you ?
 
-## Usual solution
+## La solucion habitual
 
 The usual solution is to sort all transparent triangles. Yes, ALL transparent triangles.
 
@@ -65,7 +64,7 @@ The usual solution is to sort all transparent triangles. Yes, ALL transparent tr
 
 You can sort whatever you want with qsort (in C) or std::sort (in C++). I won't dig in the details, because...
 
-## Caveat
+## Advertencia
 
 Doing so will work ( more on this in the next section ), but :
 
@@ -82,7 +81,7 @@ A good enough solution is often to :
 * If you can avoid sorting, and it still doesn't look *too *bad, consider yourself lucky.
 
 
-## Order-Independent Transparency
+## Transparencia de Orden-Independiente 
 
 A number of other techniques are worth investigating if your engine really, really needs state-of-the-art transparency :
 
@@ -94,7 +93,7 @@ A number of other techniques are worth investigating if your engine really, real
 
 Note that even a recent game like Little Big Planet, which ran on a powerful console, used only 1 layer of transparency.
 
-# The blend function
+# La funcion blend
 
 In order for the previous code to work, you need to setup your blend function.
 
@@ -104,15 +103,14 @@ glEnable(GL_BLEND);
 glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 ```
 
-Which means :
+Que significa:
 ```
 
 New color in framebuffer =
            current alpha in framebuffer * current color in framebuffer +
            (1 - current alpha in framebuffer) * shader's output color
 ```
-
-Example from the image above, with red on top :
+Ejemplo de la imagen de arriva, con rojo en la parte superior.
 
 ``` cpp
 new color = 0.5*(0,1,0) + (1-0.5)*(1,0.5,0.5); // (the red was already blended with the white background)
