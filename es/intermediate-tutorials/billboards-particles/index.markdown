@@ -2,15 +2,16 @@
 layout: page
 status: publish
 published: true
-title: 'Tutorial 18 : Billboards & Particles'
-date: '2013-09-07 11:17:18 +0200'
-date_gmt: '2013-09-07 11:17:18 +0200'
+title: 'Tutorial 18 : Carteleras y particulas'
+date: '2017-06-05 18:23:18 +0200'
+date_gmt: '2017-06-05 18:23:18 +0200'
 categories: [tuto]
 order: 100
 tags: []
 language: es
 ---
-This tutorials is divided in two parts:
 
-- [Part 1: Billboards](./billboards)
-- [Part 2: Particules and object instancing](./particles-instancing)
+Estos tutoriales se dividen en dos partes
+
+- [Parte 1: Carteleras](./billboards)
+- [Parte 2: Particulas e instanciacion de objetos](./particles-instancing)
