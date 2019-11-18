@@ -15,35 +15,34 @@ language: cat
 
 Benvingut al primer tutorial !
 
-Abans de saltar a OpenGL, és important primer apendre a compilar el codi que ve amb cada tutorial, com executar-lo i el més important, com modificar el codi tu mateix.
-# Prerrequisits
+Abans de saltar a OpenGL, és important primer aprendre a compilar el codi que ve amb cada tutorial, com executar-lo i el més important, com modificar el codi tu mateix.
+# Prerequisits
 
-No hi ha prerrequisits per seguir aquest tutorial. Si tens experiencia amb cualsevol llenguatge de programació (C, Java, Lisp, Javascript,altres) et servira per entendre el codi, pero no és necessari. Seria com apendre dues coses al mateix temps.
+No hi ha prerequisits per seguir aquest tutorial. Si tens experiència amb qualsevol llenguatge de programació (C, Java, Lisp, Javascript,altres) et servirà per entendre el codi, però no és necessari. Seria com aprendre dues coses al mateix temps.
 
-Tots els tutorials están escrits en c++ "fácil". Hem fet un gran esforç per fer el codi el més senzill posible. No hi ha templates, no hi ha classes i no hi ha punters. D'aquesta manera podreu entendre-ho tot malgrat només sapigueu programar en Java.
+Tots els tutorials són escrits en c++ "fàcil". Hem fet un gran esforç per fer el codi el més senzill possible. No hi ha plantilles, no hi ha classes i no hi ha punters. D'aquesta manera podreu entendre-ho tot malgrat que només sapigueu programar en Java.
 
-# Oblida todo lo anterior
+# Oblida-ho tot
 
-No has de saber-ho tot, però aquí has d'oblidar tot el que saps de OpenGL. Si saps quelcom que s'assembli a glBegin(), oblida-ho. Aquí aprendràs el OpenGL modern (OpenGL 3 i 4), i la majoria de tutorials ensenyen el OpenGL "antic" (OpenGL 1 i 2) així que oblida tot el que saps abans que el teu cervell es desfaci amb la barreja.
+No has de saber-ho tot, però aquí has d'oblidar tot el que saps de OpenGL. Si saps quelcom que s'assembli a glBegin(), oblida-ho. Aquí aprendràs OpenGL modern (OpenGL 3 i 4), i la majoria de tutorials ensenyen OpenGL "antic" (OpenGL 1 i 2) així que oblida tot el que saps abans que el teu cervell es desfaci amb la barreja.
 
 
-# Compilant els tutoriales
+# Compilant els tutorials
+Tots els tutorials poden ser compilats en Windows, Linux i Mac. Per a totes les plataformes el procés és pràcticament el mateix:
 
-Todos los tutoriales pueden ser compilados en Windows, Linux y Mac. Para todas las plataformas el proceso es prácticamente el mismo :
+* **Actualitza els drivers** !! Fes-ho ! Qui avisa no és traïdor!...
+* Descarrega un compilador, si no en tens cap. 
+* Instal·la CMake
+* Descarrega el codi font dels tutorials.
+* Genera un projecte usant CMake.
+* Compila el projecte.
+* Juga amb els exemples!
 
-* **Actualiza los controladores** !! Hazlo ! Soldado advertido no muere en guerra ...
-* Descarga un compilador, si no tienes uno aun. 
-* Instala CMake
-* Descarga el código fuente de los tutoriales
-* Genera un proyecto usando CMake
-* Compila el proyecto
-* Juega con los ejemplos !
+Ara en detall per a cada plataforma. És possible que s'hagi d'adaptar el procés. Si no estàs segur, segueix les instruccions para Windows i mira d'adaptar-les.
 
-Ahora en detalle para cada plataforma. Es posible que se necesite adaptar el proceso. Si no estas seguro, sigue las instrucciones para Windows y trate de adaptarlas.
+## Generant a Windows
 
-## Generando en Windows
-
-* Actualizar tus controladores debe ser fácil. Solo ve a los sitios de NVIDIA o AMD y descarga los controladores. Si no sabes tu modelo de GPU usa : Panel de Control -> Sistema y Seguridad -> Sistema -> Administrador de Dispositivos -> Adaptadores de pantalla. Si tienes una tarjeta gráfica integrada, los controladores usualmente han sido ya instalados por el fabricante del equipo (Dell, HP, ...).
+* Actualitzar els teus controladors hauria de ser fàcil. Tan sols has d'anar als webs de NVIDIA o AMD i descarregar els controladors. Si no saps el teu model de GPU utilitza: Panell de Control -> Sistema i seguretat -> Sistema -> Administrador de Dispositius -> Adaptadors de pantalla. Si tens una targeta gràfica integrada, els controladors normalment ja han estat instal·lats pel fabricant de l'equip (Dell, HP...)
 * Sugerimos que uses Visual Studio 2015 Express de escritorio como compilador. Puedes descargarlo grátis [aquí](https://www.visualstudio.com/en-US/products/visual-studio-express-vs). Si prefieres puedes usar MinGW, en ese caso te recomendamos usar [Qt Creator](http://qt-project.org/). Instala cualquiera que desees. Los pasos a continuación son para Visual Studio, pero son los mismo para cualquier IDE.
 * Descarga [CMake](http://www.cmake.org/cmake/resources/software.html) de aquí e instalelo
 * [Descargue el código fuente](http://www.opengl-tutorial.org/download/) descomprímelo en una ubicación que recuerdes, por ejemplo,  C:\Users\XYZ\Projects\OpenGLTutorials\ .
@@ -65,7 +64,7 @@ Puedes ejecutar los tutoriales desde Visual Studio. Clic derecho en el proyecto 
 
 ![]({{site.baseurl}}/assets/images/tuto-1-window/StartupProject.png)
 
-## Generando en Linux
+## Generant a Linux
 
 Hay tantas variantes de Linux en el mundo que es imposible listar para cada plataforma posible. Adapta estas instrucciones si y de ser necesario consulta la documentación de tu distribución.
 
@@ -93,7 +92,7 @@ Nota: Es recomendable usar un IDE como [Qt Creator](http://qt-project.org/). En 
 * haz clic en el martillo de abajo. Estos tutoriales pueden ser ejecutados desde el directorio tutorials/.
 
 
-## Generando en Mac
+## Generant a Mac
 
 El procedimiento es muy similar a Windows (También se puede usar Makefiles pero no los vamos a explicar aquí) :
 
@@ -109,7 +108,7 @@ El procedimiento es muy similar a Windows (También se puede usar Makefiles pero
 ![]({{site.baseurl}}/assets/images/tuto-1-window/Xcode-projectselection.png)
 
 
-## Nota para Code::Blocks
+## Nota per a Code::Blocks
 
 Por culpa de 2 bugs (uno en C::B y otro en CMake), debes editar la línea de comando en Proyecto->Opciones de construcción->Comandos Make, así :
 
@@ -117,42 +116,42 @@ Por culpa de 2 bugs (uno en C::B y otro en CMake), debes editar la línea de com
 
 También debes seleccionar el directorio de trabajo tu mismo : Proyecto->Propiedades -> Proyecto a construir -> tutorial N -> directorio de trabajo ( que es : src_dir/tutorial_N/ ).
 
-# Ejecutando los tutoriales
+# Executant els tutorials
 
 Debes ejecutar los tutoriales directamente de los directorios, simplemente haz doble clic en el ejecutable. Si prefieres usar la línea de comandos asegurate de hacer cd al directorio correcto.
 
 Si quieres ejecutar los tutoriales desde el IDE, no olvides leer las instrucciones de arriba para seleccionar el directorio correcto.
 
-# Cómo seguir estos tutoriales
+# Com seguir aquests tutorials
 
 Cada tutorial consiste en su código y sus datos, cada uno se puede encontrar en tutorialXX/. Sin embargo, nunca debes modificar estos proyectos : solo son para referencia. Abre playground/playground.cpp, y modifica este archivo en su lugar. Torturala como te plazca. Si se pierde, simplemente copia otro tutorial dentro de playground/playground.cpp, todo deberá haber vuelto a la normalidad.
 
 Nosotros te proveemos pedacitos de código a lo largo del tutorial. No dudes en copiar y pegarlos directamente en el playground mientras va avanzando : Experimentar es bueno ! Evita leer todo el código finalizado, no vas a aprender mucho de está manera. Aun si solo copias y pegas los pedazos aprenderás más y podrás solucionar problemas.
 
-# Abriendo una ventana
+# Obrint una finestra
 
-Código ! Por fin !
-Bueno, en realidad no. Todos los tutoriales te muestran el "nivel bajo" de hacer las cosas, de manera que puedas ver que no es nada mágico, es parte de un largo y tedioso proceso, así que vamos a usar GLFW, una librería externa para que haz la parte aburrida por nosotros. Si realmente quisieras, podrías usar el API de Win32 en windows, el API X11 en Linux o el API Cocoa en Mac. Podría usar otras librerías como SFML, FreeGLUT, SDL, ... Ve los [vinculos de herramientas útiles aquí](http://www.opengl-tutorial.org/miscellaneous/useful-tools-links/) 
+Per fi! Codi OpenGL!
+Be, realment no. Tots els tutorials et mostren la manera de procedir a "baix nivell", de manera que puguis veure que res passa de manera màgica. El procediment "obrir una finestra" és avorrit i no té gaire utilitat, així doncs utilitzarem GLFW, una llibreria externa per a que faci aquesta feina per nosaltres. Si realment vulguesis, podries usar l'API de Win32 de windows,l'API X11 de Linux o l'API Cocoa de Mac; o bé usar altres llibrerías "high-level" com SFML, FreeGLUT, SDL, ... Veure les pagines en els [vinculos de herramientas útiles aquí](http://www.opengl-tutorial.org/miscellaneous/useful-tools-links/) 
 
-Bueno, ahora si. Listos? Primero, debemos lidiar con las dependencias : necesitamos lo básico para mostrar mensajes en consola :
+Dacord, som-hi! Primer, hem de lidiar amb les dependencies : necesitem el més bàsic per a mostrar missatges per consola :
 
 ``` cpp
-// Incluir los cabeceros estándar
+// Incloem les capçaleres standard
 #include <stdio.h>
 #include <stdlib.h>
 ```
 
-Primero GLEW. Esto de hecho es un poco de magia, pero luego lo explicamos.
+Primer de tot, GLEW. Això de fet sí que és un xic màgic, però ho explicarem més endavant.
 
 ``` cpp
-// Incluya GLEW. Siempre incluyelo antes de gl.h y glfw.h, un poco de magia.
+// Incloem GLEW. Cal incloure sempre avans de gl.h i glfw.h, un xic màgic també.
 #include <GL/glew.h>
 ```
 
-Decidimos dejar que GLFW maneje la ventana y el teclado, así que lo incluimos :
+Hem decidit deixar que GLFW gestioni la finestra i el teclat, així doncs l'incloem :
 
 ``` cpp
-// Incluir GLFW
+// Incloem GLFW
 #include <GL/glfw3.h>
 
 ```
@@ -160,7 +159,7 @@ Decidimos dejar que GLFW maneje la ventana y el teclado, así que lo incluimos :
 En realidad no necesitamos ésta en este momento, pero una librería para matemáticas 3D. Nos será muy útil pronto. No hay magia en GLM, puedes escribir la tuya propia si deseas. Simplemente está es útil. El "using namespace" está allí para evitar que debamos escribir "glm::vec3", y escribamos "vec3" en su lugar.
 
 ``` cpp
-// Incluir GLM
+// Incloem GLM
 #include <glm/glm.hpp>
 using namespace glm;
 ```
@@ -228,5 +227,4 @@ while( glfwGetKey(window, GLFW_KEY_ESCAPE ) != GLFW_PRESS &&
 glfwWindowShouldClose(window) == 0 );
 ```
 
-Y así termina el primer tutorial ! En el tutorial 2 aprenderás a dibujar un triángulo.
-
+I així finalitza el primer tutorial ! En el tutorial 2 aprendràs a dibuixar un triangle.
