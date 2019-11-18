@@ -12,13 +12,13 @@ language: es
 ---
 {:TOC}
 
-Este será otro tutorial largo .
+Aquest serà un altre tutorial llarg.
 
-OpenGL 3 hace que sea fácil escribir las cosas complicadas a cambio de dibujar un solo triángulo de forma un poco complicada.
+OpenGL 3 facilita l'escriptura de coses complicades, a canvi ens ho posa dificil per dibuixar un simple triangle.
 
-No olvides copiar el código continuamente.
+No oblideu copiar i enganxar el codi de manera regular.
 
-**<span style="color: red"> Si el programa no funciona al iniciar, es probable que lo estes intentando correr desde la carpeta incorrecta. Lee detenidamente el tutorial 1 y configura correctamente Visual Studio !</span>**
+**<span style="color: red"> Si el programa es bloqueja en l'inici, es probable que l'estigueu executant desde la carpeta incorrecta. Llegeix amb deteniment el tutorial 1 i configura correctament Visual Studio ! !</span>**
 
 ## El VAO
 
